@@ -4,6 +4,10 @@
 
 [Download the latest release](https://github.com/sobata1995-source/SobiLevelForever/releases) · [Discord community](https://discord.gg/Pr5eMAUqt) · [Report a bug](https://github.com/sobata1995-source/SobiLevelForever/issues/new/choose)
 
+## In-game preview
+
+![Quest instructions, nearby tasks and floating navigation arrow](media/levelingguide-gameplay.jpg)
+
 ## What it does
 
 - Shows the quest name, short English instructions, objectives and live progress.
