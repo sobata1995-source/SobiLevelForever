@@ -686,9 +686,13 @@ function Engine:GetRouteChoices()
                     end
                 end
             end
-            if (inRange or activeCurrent) and not self:IsRouteFinished(route,chapter) then
+            do
                 local summary=route.faction.." | Levels "..low.."-"..high
-                if activeCurrent then summary=summary.." | Active quests" end
+                if activeCurrent then summary=summary.." | Active quests"
+                elseif self:IsRouteFinished(route,chapter) then summary=summary.." | Done"
+                elseif level<low then summary=summary.." | Upcoming"
+                elseif inRange then summary=summary.." | Your level"
+                else summary=summary.." | Earlier" end
                 if chapter then summary=summary.." | Step "..math.min(Number(chapter.index,1),#route.steps).."/"..#route.steps end
                 result[#result+1]={id=id,title=route.title,summary=summary}
             end

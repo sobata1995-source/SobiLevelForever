@@ -1,7 +1,7 @@
 -- SobiLevel Forever: WoW Forever API adapter and automatic startup.
 -- Copyright (c) 2026 SobiLevel Forever contributors. GPL-3.0-only.
 local addonName, ns = ...
-local Controller = { version = "0.3.3-beta", dirty = false, recentTurnIns = {}, requestedQuests = {} }
+local Controller = { version = "0.3.4-beta", dirty = false, recentTurnIns = {}, requestedQuests = {} }
 ns.Controller = Controller
 local Adapter = {}
 local frame = CreateFrame("Frame")

@@ -11,14 +11,14 @@
 - Groups nearby tasks and estimates XP per minute to prioritize useful quests while preserving recorded prerequisites and class chains. Speed mode is enabled by default.
 - Provides a floating direction arrow, distance and map guidance. Bundled terrain navigation follows available walkable map data and intermediate corners; unsupported or missing routes require manual navigation.
 - Includes class training reminders with a Skip button. After it has verified a class trainer's available skills, it can avoid repeating unnecessary training visits.
-- Uses a WoW-style window and a minimap button to show or hide the guide. Routes filters chapters by faction, race, level and recorded completion; Prev avoids already completed quest tasks.
+- Uses a WoW-style window and a minimap button to show or hide the guide. Routes shows all chapters for your faction and race with level ranges and progress labels; Prev avoids already completed quest tasks.
 - Saves progress per character and provides a local Report window for troubleshooting.
 
 The guide contains **65 chapters and 10 faction/race starting paths**: Human, Dwarf, Gnome, Night Elf and Alliance Skyborne; Orc, Troll, Tauren, Undead and Horde Skyborne.
 
 ## Install
 
-1. Close the game and download **LevelingGuide-0.3.3-beta.zip** from Releases. Use this addon ZIP rather than GitHub's automatic source archive.
+1. Close the game and download **LevelingGuide-0.3.4-beta.zip** from Releases. Use this addon ZIP rather than GitHub's automatic source archive.
 2. Extract **all four folders** into your Forever client's `Interface/AddOns` directory:
 
 ```text
@@ -45,7 +45,7 @@ Close the game and back up your `WTF` folder. Replace the old addon with the fou
 | Skip | Skip a task or a training reminder. |
 | Reset | Confirm a guide reset after accidental Next/Skip clicks; game quest completion is retained. |
 | Pause / Resume | Stop or resume automatic guide progression. |
-| Routes | Choose an eligible chapter. |
+| Routes | Browse all faction/race chapters, their levels and progress. |
 | Report or `/lg report` | Open copyable diagnostics; nothing is sent automatically. |
 | `/lg speed on` | Enable quest filtering and XP-priority estimates. |
 | `/lg smart on` | Enable nearby-task planning. |
@@ -53,7 +53,7 @@ Close the game and back up your `WTF` folder. Replace the old addon with the fou
 
 ## Public beta: help improve the routes
 
-**Version 0.3.3-beta is ready for community testing.** Early leveling has been tried in game and automated checks cover the route data, progression, filtering, UI and navigation logic. A complete 1–60 playthrough for every race/class has not been verified. XP/time priorities are estimates, not measured speedrun records. Terrain coverage, server quest changes and historical quest/training information can be incomplete. Training learned before installation cannot always be detected until the addon checks the trainer.
+**Version 0.3.4-beta is ready for community testing.** Early leveling has been tried in game and automated checks cover the route data, progression, filtering, UI and navigation logic. A complete 1–60 playthrough for every race/class has not been verified. XP/time priorities are estimates, not measured speedrun records. Terrain coverage, server quest changes and historical quest/training information can be incomplete. Training learned before installation cannot always be detected until the addon checks the trainer.
 
 If a step is wrong, use Skip and [report it on GitHub](https://github.com/sobata1995-source/SobiLevelForever/issues/new/choose) or [Discord](https://discord.gg/Pr5eMAUqt). Include:
 

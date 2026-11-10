@@ -9,7 +9,12 @@ local engine=ns.Engine.New(data,{routeID="now",chapters={done={index=2}}},{
  Quest=function(_,id) return {known=true,on=id==3,turned=id==2,complete=false} end,
 })
 local choices=engine:GetRouteChoices()
-assert(#choices==1 and choices[1].id=="now","Only unfinished, level-appropriate, faction/race-compatible routes")
+assert(#choices==5,"Show all faction/race-compatible chapters, including future and completed routes")
+local summaries={}
+for _,choice in ipairs(choices) do summaries[choice.id]=choice.summary end
+assert(summaries.future:find("Upcoming",1,true),"Future chapters show their level and Upcoming status")
+assert(summaries.done:find("Done",1,true) and summaries.rewarded:find("Done",1,true),"Completed chapters remain visible and labelled")
+assert(summaries.old:find("Earlier",1,true),"Earlier chapters remain visible")
 engine.state.routeID="old"
 engine.state.chapters.old={index=1}
 engine.api.Quest=function(_,id) return {known=true,on=id==4,turned=id==2,complete=false} end
@@ -31,10 +36,10 @@ for faction,starts in pairs(ns.Data.starts) do
   local real=ns.Engine.New(ns.Data,{routeID=routeID},{Character=function() return profile end,Quest=function() return {known=true,on=false,turned=false,complete=false} end})
   for _,choice in ipairs(real:GetRouteChoices()) do
    local chapter=ns.Data.routes[choice.id]
-   assert(chapter.faction==faction and chapter.startLevel<=7 and chapter.endLevel>=7)
+   assert(chapter.faction==faction)
   end
   count=count+1
  end
 end
 assert(count==10)
-print("PASS route menu completion/level filters and all Alliance/Horde race starts")
+print("PASS all-level route menu, progress labels and all Alliance/Horde race starts")
