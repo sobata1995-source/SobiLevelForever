@@ -295,19 +295,24 @@ function UI.New(controller)
     nextButton:SetScript("OnClick", function() Call(self, "Next") end)
     self.prevButton, self.skipButton, self.nextButton = previous, skip, nextButton
 
-    local routes = Button(frame, "Routes", 100, 18)
+    local routes = Button(frame, "Routes", 76, 18)
     routes:SetPoint("TOPLEFT", 16, -392)
     routes.tooltipTitle, routes.tooltipText = "Choose route", "Browse the available chapters and leveling routes."
     routes:SetScript("OnClick", function() self:ToggleRoutes() end)
-    local pause = Button(frame, "Pause", 100, 18)
-    pause:SetPoint("LEFT", routes, "RIGHT", 14, 0)
+    local pause = Button(frame, "Pause", 76, 18)
+    pause:SetPoint("LEFT", routes, "RIGHT", 8, 0)
     pause.tooltipTitle, pause.tooltipText = "Pause or resume", "Control automatic guide progression."
     pause:SetScript("OnClick", function() Call(self, "TogglePause") end)
-    local report = Button(frame, "Report", 100, 18)
-    report:SetPoint("LEFT", pause, "RIGHT", 14, 0)
+    local report = Button(frame, "Report", 76, 18)
+    report:SetPoint("LEFT", pause, "RIGHT", 8, 0)
     report.tooltipTitle, report.tooltipText = "Report route issue", "Show diagnostic information for this route and step."
     report:SetScript("OnClick", function() Call(self, "Report") end)
     self.routesButton, self.pauseButton, self.reportButton = routes, pause, report
+    local reset = Button(frame, "Reset", 76, 18)
+    reset:SetPoint("LEFT", report, "RIGHT", 8, 0)
+    reset.tooltipTitle, reset.tooltipText = "Reset guide", "Recover from skipped steps. Resets guide choices for this character after confirmation; completed game quests are kept."
+    reset:SetScript("OnClick", function() Call(self, "ConfirmReset") end)
+    self.resetButton = reset
 
     frame:SetScript("OnHide", function()
         if self.routePicker then self.routePicker:Hide() end
@@ -494,6 +499,15 @@ function UI:CreateRoutePicker()
     down:SetPoint("BOTTOMRIGHT", -14, 9)
     down:SetScript("OnClick", function() self:ScrollRoutes(1) end)
     self.routeUp, self.routeDown = up, down
+    local reset = Button(picker, "Reset guide", 110, 24)
+    reset:SetPoint("CENTER", 0, -20)
+    reset:SetScript("OnClick", function() Call(self, "ConfirmReset") end)
+    self.emptyRouteReset = reset
+    self.emptyRouteText = Font(picker, "GameFontHighlight", COLORS.muted)
+    self.emptyRouteText:SetPoint("CENTER", 0, 32)
+    self.emptyRouteText:SetWidth(350)
+    self.emptyRouteText:SetHeight(50)
+    self.emptyRouteText:SetText("No unfinished routes for your level.\nSkipped too far? Reset the guide.")
     picker:SetScript("OnMouseWheel", function(_, delta) self:ScrollRoutes(-delta) end)
     picker:SetScript("OnHide", HideTooltip)
     picker:Hide()
@@ -501,6 +515,11 @@ end
 
 function UI:RefreshRouteRows()
     local count = #self.routeChoices
+    if count == 0 then
+        self.emptyRouteReset:Show(); self.emptyRouteText:Show()
+    else
+        self.emptyRouteReset:Hide(); self.emptyRouteText:Hide()
+    end
     self.routeOffset = Clamp(math.floor(self.routeOffset), 0, math.max(0, count - ROUTE_ROWS))
     for i, row in ipairs(self.routeRows) do
         local choice = self.routeChoices[self.routeOffset + i]

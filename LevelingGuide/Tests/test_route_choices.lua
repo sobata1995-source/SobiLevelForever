@@ -17,6 +17,12 @@ choices=engine:GetRouteChoices()
 local preserved=false
 for _,choice in ipairs(choices) do if choice.id=="old" then preserved=choice.summary:find("Active quests",1,true)~=nil end end
 assert(preserved,"Keep current chapter with active unfinished quests even after outlevelling it")
+engine.state.routeID="now"
+engine.state.chapters.old.index=2
+choices=engine:GetRouteChoices()
+preserved=false
+for _,choice in ipairs(choices) do if choice.id=="old" then preserved=true end end
+assert(preserved,"An active quest overrides an accidental finished cursor in another chapter")
 assert(loadfile("LevelingGuide/Data/Routes.lua"))("LevelingGuide",ns)
 local count=0
 for faction,starts in pairs(ns.Data.starts) do

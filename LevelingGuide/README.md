@@ -43,6 +43,7 @@ Close the game and back up your `WTF` folder. Replace the old addon with the fou
 | `/lg` | Open the guide and command help. |
 | Minimap button | Left-click to show/hide; right-click for Routes; drag to reposition. |
 | Skip | Skip a task or a training reminder. |
+| Reset | Confirm a guide reset after accidental Next/Skip clicks; game quest completion is retained. |
 | Pause / Resume | Stop or resume automatic guide progression. |
 | Routes | Choose an eligible chapter. |
 | Report or `/lg report` | Open copyable diagnostics; nothing is sent automatically. |

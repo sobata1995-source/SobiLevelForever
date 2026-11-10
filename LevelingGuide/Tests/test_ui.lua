@@ -86,7 +86,7 @@ function issecretvalue(value) return value == secret end
 local ns = {}
 assert(loadfile("LevelingGuide/UI.lua"))("LevelingGuide", ns)
 local controller = { calls = {}, routes = {} }
-for _, method in ipairs({"Prev", "Next", "Skip", "TogglePause", "ChooseRoute", "HideUI", "Report", "SavePosition", "OpenMap"}) do
+for _, method in ipairs({"Prev", "Next", "Skip", "TogglePause", "ChooseRoute", "HideUI", "Report", "ConfirmReset", "SavePosition", "OpenMap"}) do
     controller[method] = function(self, ...) self.calls[#self.calls + 1] = {method, ...} end
 end
 function controller:GetRouteChoices() return self.routes end
@@ -129,6 +129,12 @@ ui.pauseButton.scripts.OnClick(ui.pauseButton)
 check(controller.calls[#controller.calls][1] == "TogglePause", "Pause callback")
 ui.reportButton.scripts.OnClick(ui.reportButton)
 check(controller.calls[#controller.calls][1] == "Report", "Report callback")
+ui.resetButton.scripts.OnClick(ui.resetButton)
+check(controller.calls[#controller.calls][1] == "ConfirmReset", "Reset requests confirmation")
+ui.routeChoices = {}; ui:RefreshRouteRows()
+check(ui.emptyRouteReset:IsShown() and ui.emptyRouteText:IsShown(), "Empty routes offers recovery")
+ui.emptyRouteReset.scripts.OnClick(ui.emptyRouteReset)
+check(controller.calls[#controller.calls][1] == "ConfirmReset", "Empty route reset requests confirmation")
 
 ui:Hide(); ui:ShowRoutes()
 check(ui.frame:IsShown() and ui.routePicker:IsShown(), "ShowRoutes opens hidden window")

@@ -356,7 +356,7 @@ function Controller:ConfirmReset()
         return
     end
     StaticPopupDialogs.SOBILEVEL_FOREVER_RESET = {
-        text = "Reset SobiLevel Forever guide progress for this character? Your quests and game progress are unchanged.",
+        text = "Reset LevelingGuide for this character? This clears manual skips and guide position, then selects a route using your level and active quests. Completed game quests are kept.",
         button1 = "Reset guide", button2 = "Cancel", timeout = 0, whileDead = true, hideOnEscape = true, preferredIndex = 3,
         OnAccept = function()
             self.recentTurnIns, self.requestedQuests = {}, {}

@@ -219,7 +219,11 @@ end
 function Engine:ChooseRoute(id)
     if not self:IsRouteEligible(self.data.routes[id]) then return false end
     self.state.routeID, self.state.review, self.state.notice = id, false, nil
-    self:Chapter()
+    local chapter = self:Chapter()
+    if chapter and Number(chapter.index,1)>#self:GetRoute().steps then
+        self:Sync()
+        return true
+    end
     self:Refresh()
     return true
 end
@@ -642,6 +646,12 @@ function Engine:SetOption(key, value)
 end
 
 function Engine:IsRouteFinished(route,chapter)
+    for _,step in ipairs(route.steps) do
+        if step.questID and not self:IsFiltered(step) then
+            local quest=self:Quest(step.questID)
+            if quest.on==true and quest.turned~=true then return false end
+        end
+    end
     if chapter and Number(chapter.index,1)>#route.steps then return true end
     local seen,any={},false
     for _,step in ipairs(route.steps) do
@@ -668,7 +678,7 @@ function Engine:GetRouteChoices()
             local chapter=self.state.chapters[id]
             local inRange=level>=low and level<=high
             local activeCurrent=false
-            if not inRange and level>=low and id==self.state.routeID and chapter and Number(chapter.index,1)<=#route.steps then
+            if level>=low then
                 for _,step in ipairs(route.steps) do
                     if step.questID and not self:IsFiltered(step) then
                         local quest=self:Quest(step.questID)
