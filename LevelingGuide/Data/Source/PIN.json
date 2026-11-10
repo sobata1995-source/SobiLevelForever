@@ -1,0 +1,524 @@
+{
+  "repository": "https://github.com/fitzforge/polestar",
+  "commit": "e978e136279cf075eff34718f3ad5fd3dacba623",
+  "branchAtRetrieval": "next",
+  "retrieved": "2026-11-09",
+  "license": "GPL-3.0-only",
+  "upstreamFiles": [
+    {
+      "path": "LICENSE",
+      "gitBlob": "3cd6e2f7b09c1bf5f64f53c0f6e553647b8019c2",
+      "size": 37953,
+      "bundledPath": "Data/Licenses/Polestar-LICENSE.txt",
+      "sha256": "30c65d4d95a34bb3226a6a67d7b03ac6a70ad5d64bb7064e7c74432d5903795f"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "gitBlob": "66fb4ec97c5f3d8fbaa6908e3ec365be5d1922f3",
+      "size": 38321,
+      "bundledPath": "Data/Licenses/Polestar-THIRD_PARTY.md",
+      "sha256": "cd550ad7537e57aac2be56335364e7a070bd1e9471373b232eff8e79fa99af24"
+    },
+    {
+      "path": "LICENSE-EXCEPTION.md",
+      "gitBlob": "b600f6da17036e6b7efe4e88745a2d8e6e474d15",
+      "size": 644,
+      "bundledPath": "Data/Licenses/Polestar-LICENSE-EXCEPTION.md",
+      "sha256": "34d76f462dde4d25f288031db7cdf0d476f15b8f5ed1b1ad18ac1dd4056dde35"
+    },
+    {
+      "path": "addon/Polestar_Guides/LICENSE-DATA.txt",
+      "gitBlob": "544bc8a92be8b23ff0f74973c6c92a1dc595ae7b",
+      "size": 8424,
+      "bundledPath": "Data/Licenses/Polestar-GUIDE-LICENSE-DATA.txt",
+      "sha256": "9d2fa623a94e0d8b33a6f542599722a03dfa9ff7930fa27174f27c02682be9b7"
+    },
+    {
+      "path": "addon/Polestar_Guides/MapFrames.lua",
+      "gitBlob": "e18d5affe863d21e512a0f9ca7f8b57b99c7b4e0",
+      "size": 4712
+    },
+    {
+      "path": "addon/Polestar_Guides_Alliance/Guides.lua",
+      "gitBlob": "b8d08d812000c2aff82af96034d4ee95bfc6ef4a",
+      "size": 2954015
+    },
+    {
+      "path": "addon/Polestar_Guides_Horde/Guides.lua",
+      "gitBlob": "8782a9d644ae084fe5186fbae3bc283079cb1077",
+      "size": 2628879
+    },
+    {
+      "path": "forever-db/LICENSE-CC-BY-4.0.txt",
+      "gitBlob": "da6ab6cc8f333d7e89a99812866df8f24374d47c",
+      "size": 18657,
+      "bundledPath": "Data/Licenses/CC-BY-4.0.txt",
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "guides/forever/alliance/02-westfall.guide",
+      "gitBlob": "36695b690cfc5f3afa4fe01d1345a37944f9c725",
+      "size": 22414,
+      "bundledPath": "Data/Source/guides/forever/alliance/02-westfall.guide",
+      "sha256": "e7a0bde64794b7e9d893c3807abf63c0e35440ceffa80e8cdd008d7c42ad5dd3"
+    },
+    {
+      "path": "guides/forever/alliance/03-darkshore-return.guide",
+      "gitBlob": "830ea223640d37979a4a5b144aa206a6a3182e8a",
+      "size": 12153,
+      "bundledPath": "Data/Source/guides/forever/alliance/03-darkshore-return.guide",
+      "sha256": "a32013414b3431f4b91d13aec8c959924638b8b9f347b9c98ed39fdc4b26aca2"
+    },
+    {
+      "path": "guides/forever/alliance/03-darkshore.guide",
+      "gitBlob": "d9045046bd347b13b4e9e55bc41b94bccaa35f90",
+      "size": 20791,
+      "bundledPath": "Data/Source/guides/forever/alliance/03-darkshore.guide",
+      "sha256": "de3562514aee1dd0d87d6541c33833e238c74f0538464fff2a4e2aaa800f3a42"
+    },
+    {
+      "path": "guides/forever/alliance/03-loch-modan.guide",
+      "gitBlob": "16b357e03ed7876967aa1aecd59dbd39970c5906",
+      "size": 20853,
+      "bundledPath": "Data/Source/guides/forever/alliance/03-loch-modan.guide",
+      "sha256": "c1fbf5263a7f629736275995cd69ffddbe5df75034d5f2cda0e53580df6b6170"
+    },
+    {
+      "path": "guides/forever/alliance/04-redridge-mountains.guide",
+      "gitBlob": "06b3c4a20075b20dd9d13e75d15c7cbe6e930c6c",
+      "size": 20334,
+      "bundledPath": "Data/Source/guides/forever/alliance/04-redridge-mountains.guide",
+      "sha256": "91002665992ff5eda04150a30d151d6ed63db26e2230fcde7c6ae1d0be33b245"
+    },
+    {
+      "path": "guides/forever/alliance/05-duskwood.guide",
+      "gitBlob": "65ab2b25be2f94d817bff17b9f43f0253b3c63a6",
+      "size": 10808,
+      "bundledPath": "Data/Source/guides/forever/alliance/05-duskwood.guide",
+      "sha256": "4e1f6549a023431d451a7246238331e54056ab31fe6312f71c2ab5dcfcddeeb2"
+    },
+    {
+      "path": "guides/forever/alliance/06-ashenvale.guide",
+      "gitBlob": "8e18fc9335bc5080c3f3b0aee4e168fc6a16f6bb",
+      "size": 19030,
+      "bundledPath": "Data/Source/guides/forever/alliance/06-ashenvale.guide",
+      "sha256": "fe118e9939d4798be5efa4f07c09ca44c495c45f8f7ca8a01b4737187bd209fa"
+    },
+    {
+      "path": "guides/forever/alliance/06-wetlands.guide",
+      "gitBlob": "f7a230eb71dd075865bbec79af44063ec4f7b443",
+      "size": 19672,
+      "bundledPath": "Data/Source/guides/forever/alliance/06-wetlands.guide",
+      "sha256": "c14f2f614a7eb232d4d775f9fbb03fa3883d114151fe21f084ad4da2fea6ce01"
+    },
+    {
+      "path": "guides/forever/alliance/07-thousand-needles.guide",
+      "gitBlob": "7743257bacaab01f72ef04d968fb13af83e5a1b4",
+      "size": 5852,
+      "bundledPath": "Data/Source/guides/forever/alliance/07-thousand-needles.guide",
+      "sha256": "dddf8c996adff959311006face3bc27f5d22d9ec6c22fa5303780f223cec9906"
+    },
+    {
+      "path": "guides/forever/alliance/30-40/01-hillsbrad-foothills.guide",
+      "gitBlob": "015f8e25099655dcfbb59c9dd6a43ba983cde50c",
+      "size": 14529,
+      "bundledPath": "Data/Source/guides/forever/alliance/30-40/01-hillsbrad-foothills.guide",
+      "sha256": "7b539ca3eca7dbb374d04c0a7643eed0cb0b7a4070869d474a52329bf563bee9"
+    },
+    {
+      "path": "guides/forever/alliance/30-40/02-desolace.guide",
+      "gitBlob": "f6f13aea58b1e72528952da7ddca230540a3a908",
+      "size": 4555,
+      "bundledPath": "Data/Source/guides/forever/alliance/30-40/02-desolace.guide",
+      "sha256": "796964a7d2781bb9ade32cc1ed2606c832d0d59a8b9c0ec130d26dac1aa00b94"
+    },
+    {
+      "path": "guides/forever/alliance/30-40/03-ashenvale.guide",
+      "gitBlob": "9c460e62c13bb9f339eba045791ba272b2dc2060",
+      "size": 7170,
+      "bundledPath": "Data/Source/guides/forever/alliance/30-40/03-ashenvale.guide",
+      "sha256": "234e461447fbaf37a956cc70124a082f9e2cc5a147b55817e0031ee43d60f0de"
+    },
+    {
+      "path": "guides/forever/alliance/30-40/04-stranglethorn-vale.guide",
+      "gitBlob": "11530d699c234ef9098c05137209347f9b626005",
+      "size": 9770,
+      "bundledPath": "Data/Source/guides/forever/alliance/30-40/04-stranglethorn-vale.guide",
+      "sha256": "eac7b33db8b9ab64afd3631689afdeca85ee3518534737a3b7a2bda4901db92f"
+    },
+    {
+      "path": "guides/forever/alliance/30-40/04b-stranglethorn-vale.guide",
+      "gitBlob": "b66faac6ca18a2120b278776747d4171eee00982",
+      "size": 5890,
+      "bundledPath": "Data/Source/guides/forever/alliance/30-40/04b-stranglethorn-vale.guide",
+      "sha256": "c022c3acb45b6f9e5b50b5f25a568264e987d7e9e5008dfc47c62a2ab7111590"
+    },
+    {
+      "path": "guides/forever/alliance/30-40/05-arathi-highlands.guide",
+      "gitBlob": "66cdc151ee98c2e4d3828b46e2a121390e18c63f",
+      "size": 16744,
+      "bundledPath": "Data/Source/guides/forever/alliance/30-40/05-arathi-highlands.guide",
+      "sha256": "dfdf6279233c1614df12774305a2176f877d2f8c2469213e95cd9d4179b16ab8"
+    },
+    {
+      "path": "guides/forever/alliance/30-40/06-badlands.guide",
+      "gitBlob": "54b0534b66fc3033bb2f9cae62c2c931c4484676",
+      "size": 11259,
+      "bundledPath": "Data/Source/guides/forever/alliance/30-40/06-badlands.guide",
+      "sha256": "f19c6fdc8588a922a4f38efe808c4bd093c111a6c7a680168e67bb957eb96d86"
+    },
+    {
+      "path": "guides/forever/alliance/40-50/01-stranglethorn-vale.guide",
+      "gitBlob": "39a33146ac921074e19fa2488b041473bca4f82f",
+      "size": 27269,
+      "bundledPath": "Data/Source/guides/forever/alliance/40-50/01-stranglethorn-vale.guide",
+      "sha256": "41762d3a5bc2d6161325135f400a76eae6bdab37d5a613bc1d02aafc2963461b"
+    },
+    {
+      "path": "guides/forever/alliance/40-50/02-badlands.guide",
+      "gitBlob": "b238355c8475cd22d608dd78581630fc4e0732cb",
+      "size": 5077,
+      "bundledPath": "Data/Source/guides/forever/alliance/40-50/02-badlands.guide",
+      "sha256": "8bf169586844ab44d3bea83fa5b6e6605fb3ec30a2e2a7c93f1db2cf8b2393b6"
+    },
+    {
+      "path": "guides/forever/alliance/40-50/03-feralas.guide",
+      "gitBlob": "413325a6d1098d71711ec1a100bd9c0e9842c12b",
+      "size": 8515,
+      "bundledPath": "Data/Source/guides/forever/alliance/40-50/03-feralas.guide",
+      "sha256": "30be6bd395a14af48486785e284fbca3767b4c51b0039b7b91f3670e67bdeb3b"
+    },
+    {
+      "path": "guides/forever/alliance/40-50/04-tanaris.guide",
+      "gitBlob": "905fb0ca1a38fb0054751f51f8e0b57bb942ae51",
+      "size": 10599,
+      "bundledPath": "Data/Source/guides/forever/alliance/40-50/04-tanaris.guide",
+      "sha256": "85a9315a5c261934a83317c0ee3ab3f8b6dce75afca153bdcfd3002e561964ed"
+    },
+    {
+      "path": "guides/forever/alliance/40-50/05-the-hinterlands.guide",
+      "gitBlob": "52b90f2b2c3bbe36f4ca9f59f6db67a925fd0396",
+      "size": 9515,
+      "bundledPath": "Data/Source/guides/forever/alliance/40-50/05-the-hinterlands.guide",
+      "sha256": "644b4d64cb0d2483df50ff026c1ffefa1bfb0a63c8c499e10ca0cfa8c1a9dc0b"
+    },
+    {
+      "path": "guides/forever/alliance/40-50/06-searing-gorge.guide",
+      "gitBlob": "3ffd5c893fb9cf89d09ce390a8ad58022f274e16",
+      "size": 8004,
+      "bundledPath": "Data/Source/guides/forever/alliance/40-50/06-searing-gorge.guide",
+      "sha256": "14668a7df502050b0f7cf2a2fb0bee73dbfee61b4c28d8ee04247f8a114c0fce"
+    },
+    {
+      "path": "guides/forever/alliance/40-50/07-un-goro-crater.guide",
+      "gitBlob": "5efe050c8db389bdd83dbbf1252f8ef23d20ee39",
+      "size": 9424,
+      "bundledPath": "Data/Source/guides/forever/alliance/40-50/07-un-goro-crater.guide",
+      "sha256": "1f1dfb66ed211d3cb92e613f3ff78ef2e29f6d1864fc4c4658f244be8619b8c4"
+    },
+    {
+      "path": "guides/forever/alliance/50-60/01-burning-steppes.guide",
+      "gitBlob": "d427d5ec512fd852bdd78d06907a3d2284075242",
+      "size": 14627,
+      "bundledPath": "Data/Source/guides/forever/alliance/50-60/01-burning-steppes.guide",
+      "sha256": "0ea9a7672165d219ae5ddbac8cfd7f89450915eb29c9b3f575409eb117a735a1"
+    },
+    {
+      "path": "guides/forever/alliance/50-60/02-felwood.guide",
+      "gitBlob": "cc5d0ff1712bba33a86acfcb016d8204c7ed602c",
+      "size": 8759,
+      "bundledPath": "Data/Source/guides/forever/alliance/50-60/02-felwood.guide",
+      "sha256": "9a2fa43d8baf975f47e5a6cc79d0aeea3d1f0234dbeff94733e973f60b93de87"
+    },
+    {
+      "path": "guides/forever/alliance/50-60/03-winterspring.guide",
+      "gitBlob": "3c08541d820a7a3f42394bf6be492432e0ef315e",
+      "size": 9688,
+      "bundledPath": "Data/Source/guides/forever/alliance/50-60/03-winterspring.guide",
+      "sha256": "ce9656a2493c2dfea5f8818e91ac945eb6d26268b192faac8cfaf152ebe94220"
+    },
+    {
+      "path": "guides/forever/alliance/50-60/04-western-plaguelands.guide",
+      "gitBlob": "c4a0a712ee06ff197d1f554d4f420d5ca646884d",
+      "size": 24622,
+      "bundledPath": "Data/Source/guides/forever/alliance/50-60/04-western-plaguelands.guide",
+      "sha256": "e0dddd25e3e7b0f46fb2d940869cc3c69cea0c831274808d22a1db7ae262b63f"
+    },
+    {
+      "path": "guides/forever/alliance/50-60/05-silithus.guide",
+      "gitBlob": "4fc3b0cc5bbc40f4fadd7f074b5519fbf90c8d9e",
+      "size": 4136,
+      "bundledPath": "Data/Source/guides/forever/alliance/50-60/05-silithus.guide",
+      "sha256": "3802086717427a5a9a3ce688c0a3421b6ebab005f3bcee3dfbb7ba0378c41025"
+    },
+    {
+      "path": "guides/forever/alliance/50-60/06-silithus.guide",
+      "gitBlob": "e699c0aa2dcf0e5b060af87e859118b2fe17a0d2",
+      "size": 20991,
+      "bundledPath": "Data/Source/guides/forever/alliance/50-60/06-silithus.guide",
+      "sha256": "acdfe3d2476410cfeb3fdf5a90629508e9ae167a5ac78fe5f5898abd2b101279"
+    },
+    {
+      "path": "guides/forever/alliance/dwarf/01-dun-morogh.guide",
+      "gitBlob": "1c6712e58a95747b9875a6b8882b95a45a3e9c32",
+      "size": 39536,
+      "bundledPath": "Data/Source/guides/forever/alliance/dwarf/01-dun-morogh.guide",
+      "sha256": "d4bb408095ec1f23acd785408e101697ba1bdfda329a22e988c78b8b5a10bfd8"
+    },
+    {
+      "path": "guides/forever/alliance/gnome/01-dun-morogh.guide",
+      "gitBlob": "e727be1ca56279bcfbdf1c77d114e4e1f178ad2d",
+      "size": 37423,
+      "bundledPath": "Data/Source/guides/forever/alliance/gnome/01-dun-morogh.guide",
+      "sha256": "a51d0f151c1e3bd046cd4d87b83460fa8ab7cb65106e2a872086aebca8dc229b"
+    },
+    {
+      "path": "guides/forever/alliance/human/01-elwynn-forest.guide",
+      "gitBlob": "aac65e84ea0671e736ec291c257c5b2345c2d018",
+      "size": 26409,
+      "bundledPath": "Data/Source/guides/forever/alliance/human/01-elwynn-forest.guide",
+      "sha256": "187b49d52db2d64d85bd197c756dc8dfcdbf19011c743f54b9ffe28d1e10c4cd"
+    },
+    {
+      "path": "guides/forever/alliance/nightelf/01-teldrassil.guide",
+      "gitBlob": "3a3e61ada38437302ec5ee243a0dd945e2160e0e",
+      "size": 28754,
+      "bundledPath": "Data/Source/guides/forever/alliance/nightelf/01-teldrassil.guide",
+      "sha256": "e974ae9bb2e0024f8a6bc6b97cd6c0dc2adacb5c680fba8d0922376e0c8165fa"
+    },
+    {
+      "path": "guides/forever/alliance/nightelf/02-darkshore.guide",
+      "gitBlob": "402b37cbcae7c2bd0df76bbe00d099c7bd7ffb53",
+      "size": 9991,
+      "bundledPath": "Data/Source/guides/forever/alliance/nightelf/02-darkshore.guide",
+      "sha256": "96aefa136bf0f6fde2ef52c54e3aa65190fb31f8474794e46591adb8d6e2a554"
+    },
+    {
+      "path": "guides/forever/alliance/skyborne/01-zephras-isle.guide",
+      "gitBlob": "379c813e9cb80cd8225ab7d83d2584b75a58b736",
+      "size": 29318,
+      "bundledPath": "Data/Source/guides/forever/alliance/skyborne/01-zephras-isle.guide",
+      "sha256": "6b91ffcb2d07ea3dc53dafbf7face43dc9dfe24c6d796815745a99c67d0ee209"
+    },
+    {
+      "path": "guides/forever/horde/02-the-barrens.guide",
+      "gitBlob": "8e5ba6a07f74d929740511d433a0dfc74959d223",
+      "size": 50547,
+      "bundledPath": "Data/Source/guides/forever/horde/02-the-barrens.guide",
+      "sha256": "4fc59a966cc279a70ace115df1f68730a19495bd41df03230d7388d642169821"
+    },
+    {
+      "path": "guides/forever/horde/03-silverpine-forest.guide",
+      "gitBlob": "b16aa19e963b0b823e18e831ed9407c3815c16e4",
+      "size": 19351,
+      "bundledPath": "Data/Source/guides/forever/horde/03-silverpine-forest.guide",
+      "sha256": "754f5634237e99edb09caada762c72ba897f25491b1de2f415b46a782b2eb422"
+    },
+    {
+      "path": "guides/forever/horde/04-the-barrens.guide",
+      "gitBlob": "1523650b304f7998841ed3ee5cc0e32318a1f70d",
+      "size": 11250,
+      "bundledPath": "Data/Source/guides/forever/horde/04-the-barrens.guide",
+      "sha256": "188b49c17ae2819ec21088a3e2a0e386df8dbedab1d775ec7a1c64e6d5246734"
+    },
+    {
+      "path": "guides/forever/horde/05-stonetalon-mountains.guide",
+      "gitBlob": "3e7c9a3e0638500dcecb051a6adfe6535a20d2b1",
+      "size": 12788,
+      "bundledPath": "Data/Source/guides/forever/horde/05-stonetalon-mountains.guide",
+      "sha256": "6c5b0403edaeb9f1de42b736292ea409d9ec58271e0eb05d5998c03bc74d976b"
+    },
+    {
+      "path": "guides/forever/horde/06-hillsbrad-foothills.guide",
+      "gitBlob": "06d01f4e2cfe1941ac6c890374554aca603a980c",
+      "size": 11576,
+      "bundledPath": "Data/Source/guides/forever/horde/06-hillsbrad-foothills.guide",
+      "sha256": "e9442a31c9912271aca83fb3d49f6693e4f0def302c9fe3dc3429efc5b7eb339"
+    },
+    {
+      "path": "guides/forever/horde/07-ashenvale.guide",
+      "gitBlob": "5b2f8737f20bb808ec7a306d9be8a727f980db69",
+      "size": 18234,
+      "bundledPath": "Data/Source/guides/forever/horde/07-ashenvale.guide",
+      "sha256": "4c04f33ffb2ea87ef6ddbe49bca93a8973adc64e9c4797754775779b8b9c7a15"
+    },
+    {
+      "path": "guides/forever/horde/30-40/01-hillsbrad-foothills.guide",
+      "gitBlob": "70bfe6fe82867ceb1c807e4236e3d054aecc741f",
+      "size": 18645,
+      "bundledPath": "Data/Source/guides/forever/horde/30-40/01-hillsbrad-foothills.guide",
+      "sha256": "6d60c75ff8428f35e852c67b650b43d5f15df8f0bf41a29d1cf4012be280ff34"
+    },
+    {
+      "path": "guides/forever/horde/30-40/02-thousand-needles.guide",
+      "gitBlob": "bf7f870b4dbe79557d9454bb2064536c029035b9",
+      "size": 17711,
+      "bundledPath": "Data/Source/guides/forever/horde/30-40/02-thousand-needles.guide",
+      "sha256": "4d21122ce6ff5d36ecd13dbbf0b7b878fc47d0ddadc9eb46810d51c3a239c8f4"
+    },
+    {
+      "path": "guides/forever/horde/30-40/03-stranglethorn-vale.guide",
+      "gitBlob": "b11becd3cd90d12a1ff14d38100abd1011064b1f",
+      "size": 13911,
+      "bundledPath": "Data/Source/guides/forever/horde/30-40/03-stranglethorn-vale.guide",
+      "sha256": "87e3e8e5435affe2079bfc996ff79919c71cc736467b8421b32f274df9cd6c6f"
+    },
+    {
+      "path": "guides/forever/horde/30-40/04-dustwallow-marsh.guide",
+      "gitBlob": "0b06fb33e7e09c6a82db7bd249625fcb3236b3b8",
+      "size": 12045,
+      "bundledPath": "Data/Source/guides/forever/horde/30-40/04-dustwallow-marsh.guide",
+      "sha256": "83ee41db39e5898d9af3662492ceec9d1555d6bac462ed24d5f6fb01a9fdeb64"
+    },
+    {
+      "path": "guides/forever/horde/30-40/05-arathi-highlands.guide",
+      "gitBlob": "0334a5e9f4bed288d407aba75c70387ad5ee02d3",
+      "size": 12990,
+      "bundledPath": "Data/Source/guides/forever/horde/30-40/05-arathi-highlands.guide",
+      "sha256": "42dd29cd9733d0500e3c34dc1d1ea30d8a83d90fa47a1f3a5e1e4211bc56108a"
+    },
+    {
+      "path": "guides/forever/horde/30-40/06-badlands.guide",
+      "gitBlob": "acb9c6d223130113b814b6fa32afee246122d24a",
+      "size": 5824,
+      "bundledPath": "Data/Source/guides/forever/horde/30-40/06-badlands.guide",
+      "sha256": "1be2707bd0aba52b730d5d5a7a938350397768965573c50ebcf68b02426fd3aa"
+    },
+    {
+      "path": "guides/forever/horde/40-50/01-stranglethorn-vale.guide",
+      "gitBlob": "275dd5e52a50a2ab5864e7d97f0addcaf36fecae",
+      "size": 19798,
+      "bundledPath": "Data/Source/guides/forever/horde/40-50/01-stranglethorn-vale.guide",
+      "sha256": "a3da9fa0088f3578a783ce8601bdf2e84827137db489b898a60d26f7cc6af9ae"
+    },
+    {
+      "path": "guides/forever/horde/40-50/02-feralas.guide",
+      "gitBlob": "63268997622b5ea96373d4e8aa88679cd32ed9c6",
+      "size": 19082,
+      "bundledPath": "Data/Source/guides/forever/horde/40-50/02-feralas.guide",
+      "sha256": "17e0c274ca8d8f726370f0eb43619960134746d1790c52f761eaf427dfc9b706"
+    },
+    {
+      "path": "guides/forever/horde/40-50/03-feralas.guide",
+      "gitBlob": "3dd5e19829a69e130924d2f016b1c46f66fb7e3f",
+      "size": 9887,
+      "bundledPath": "Data/Source/guides/forever/horde/40-50/03-feralas.guide",
+      "sha256": "0d0e9246c577a43dd7c117eb5432aa6332cf10f205a863ff587ced92044b6a9c"
+    },
+    {
+      "path": "guides/forever/horde/40-50/04-tanaris.guide",
+      "gitBlob": "ec6119bba1c0cdeb7144c775b158bde1a48b9e77",
+      "size": 12557,
+      "bundledPath": "Data/Source/guides/forever/horde/40-50/04-tanaris.guide",
+      "sha256": "5e8c9837110a3503a00649709c61f41bb1b12c4589c973b64103f6d20615b21c"
+    },
+    {
+      "path": "guides/forever/horde/40-50/05-the-hinterlands.guide",
+      "gitBlob": "6704da4ddb157059070b1533e96c4fbdaf835ab1",
+      "size": 15061,
+      "bundledPath": "Data/Source/guides/forever/horde/40-50/05-the-hinterlands.guide",
+      "sha256": "45af0595bb167865d8e7ebd04b677900e6e549cba29897772422e1ec3866659d"
+    },
+    {
+      "path": "guides/forever/horde/40-50/06-azshara.guide",
+      "gitBlob": "8a68cdf926a938ce79cea0c82846d60d657b68ec",
+      "size": 11755,
+      "bundledPath": "Data/Source/guides/forever/horde/40-50/06-azshara.guide",
+      "sha256": "dd5fb32e27591bd123acc7a08e3dcb7cc03d4e1069849b390361728995c91a4d"
+    },
+    {
+      "path": "guides/forever/horde/50-60/01-un-goro-crater.guide",
+      "gitBlob": "1691aab0bde8cf688bc4b68a07c3329d3c09df56",
+      "size": 20944,
+      "bundledPath": "Data/Source/guides/forever/horde/50-60/01-un-goro-crater.guide",
+      "sha256": "7ca654932c5da06157add37f6438be4df676fe1440c3936da73ec9a02dcf0ca0"
+    },
+    {
+      "path": "guides/forever/horde/50-60/02-felwood.guide",
+      "gitBlob": "022e830c77c363382eb59d2c0d89c81531952c76",
+      "size": 14907,
+      "bundledPath": "Data/Source/guides/forever/horde/50-60/02-felwood.guide",
+      "sha256": "a8271dcf24b3db24d20ba513acba88636cc5a4b3e16997ff72d3db20766ccf6b"
+    },
+    {
+      "path": "guides/forever/horde/50-60/03-winterspring.guide",
+      "gitBlob": "1b7cf653ede8ca1493e0b2363b8235313c65b42e",
+      "size": 10081,
+      "bundledPath": "Data/Source/guides/forever/horde/50-60/03-winterspring.guide",
+      "sha256": "d02c12b0fcc3c768d7523bddf82535464452c875d7988325d4fed79d0a45edb8"
+    },
+    {
+      "path": "guides/forever/horde/50-60/04-azshara.guide",
+      "gitBlob": "4a61c94c1694fc7963a9f449cff729a325433f51",
+      "size": 4770,
+      "bundledPath": "Data/Source/guides/forever/horde/50-60/04-azshara.guide",
+      "sha256": "490ccfd21e56452a34a57bd4df28453f0e4662cdb92aefdfdf13baec2a774d97"
+    },
+    {
+      "path": "guides/forever/horde/50-60/05-eastern-plaguelands.guide",
+      "gitBlob": "2b7431ebcffe29bba6df2ab0c6ab18bc1a46c1de",
+      "size": 12491,
+      "bundledPath": "Data/Source/guides/forever/horde/50-60/05-eastern-plaguelands.guide",
+      "sha256": "f83ca562f26be8e8cbae05d616e085f828d6e3c830f46d7d0be228ca985b828b"
+    },
+    {
+      "path": "guides/forever/horde/50-60/06-silithus.guide",
+      "gitBlob": "77e5282ce920a51e94cf02c2a382822d717100d6",
+      "size": 18161,
+      "bundledPath": "Data/Source/guides/forever/horde/50-60/06-silithus.guide",
+      "sha256": "ec292a2e41bcd122c4184e3e9ef768ccbaf6071d01aeff929cc30a3b2972d308"
+    },
+    {
+      "path": "guides/forever/horde/50-60/07-felwood.guide",
+      "gitBlob": "5838a2e515d95c8eb4ab9608081e860be53bb143",
+      "size": 11006,
+      "bundledPath": "Data/Source/guides/forever/horde/50-60/07-felwood.guide",
+      "sha256": "78c802067ae7ea6750ac81b39595ce68bdca70bb873be5439a5a24007643a5f6"
+    },
+    {
+      "path": "guides/forever/horde/orc/01-durotar.guide",
+      "gitBlob": "cc13b8fcefd15027504d75208384fa7b22eb1543",
+      "size": 22988,
+      "bundledPath": "Data/Source/guides/forever/horde/orc/01-durotar.guide",
+      "sha256": "104f84bb192516ab0563cbd5d8f4a20ec397586a9cc2ec036657f10b4a7f7c2c"
+    },
+    {
+      "path": "guides/forever/horde/skyborne/01-zephras-isle.guide",
+      "gitBlob": "c76689170f38a35b5fb17965a1299a2c98f77477",
+      "size": 29181,
+      "bundledPath": "Data/Source/guides/forever/horde/skyborne/01-zephras-isle.guide",
+      "sha256": "2e91b398b41b49de3d50a2f962f3619dd4fbe812e76e80c361083a2a6f520111"
+    },
+    {
+      "path": "guides/forever/horde/tauren/01-mulgore.guide",
+      "gitBlob": "a95e498e4f95cbd34e9174147daf88fc320bfb49",
+      "size": 20471,
+      "bundledPath": "Data/Source/guides/forever/horde/tauren/01-mulgore.guide",
+      "sha256": "1bc1e043c32ba3f6bb9705b8f02b08e00beb3b1f691936a75be3f9e625610a77"
+    },
+    {
+      "path": "guides/forever/horde/troll/01-durotar.guide",
+      "gitBlob": "d1fb6d6179a7481ae0858d90bc5bbf4cd4f93d2e",
+      "size": 22543,
+      "bundledPath": "Data/Source/guides/forever/horde/troll/01-durotar.guide",
+      "sha256": "fc1898502479577dc1d29092280cdc6a088e913f11c55436dbd589a87ab5a9d1"
+    },
+    {
+      "path": "guides/forever/horde/undead/01-tirisfal-glades.guide",
+      "gitBlob": "b65487bee7172d5fbd454f55648a7e31d58abeee",
+      "size": 27701,
+      "bundledPath": "Data/Source/guides/forever/horde/undead/01-tirisfal-glades.guide",
+      "sha256": "cc74ac6a59df4688ca1af4208a66da81353499ec8afdd92c57d9243a3a0d6186"
+    }
+  ],
+  "normalization": "Own converter reads licensed structured leveling data extracted from upstream compiled declarative tables; original guide text and notices retained byte-for-byte.",
+  "derivedInputs": {
+    "polestar-leveling.json": "4ee2a051a87fcc785a0fb61979f75af7961228eb570b0b7a34db4117360a2b76",
+    "map-frames.json": "5df486daee2f75f1e6d6d0fb4b05bbc4cc8814cc6df576d8c54fe9f66c76d2ee",
+    "convert_routes.py": "e5dffb43ca887834f7ff914479138d646642120212bf60a2ef40346234323981"
+  },
+  "generatedOutput": {
+    "path": "Data/Routes.lua",
+    "sha256": "fa10dfb87e847b20c20b6312c0437e0d42bd6f200f2745c49e27d3fc4031a5ed"
+  }
+}

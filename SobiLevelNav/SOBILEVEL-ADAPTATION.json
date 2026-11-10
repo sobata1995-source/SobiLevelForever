@@ -1,0 +1,5 @@
+{
+  "upstream": "https://github.com/fitzforge/polestar/releases/tag/v0.3.5",
+  "archiveSha256": "ef9184e65d1ed6b7b5d4358b8e007d0bbe62fb2d3c7e77e34d9a98853016d36c",
+  "modifications": "Standalone packaging: renamed addon/data globals; removed Polestar core dependency. Router algorithms and walking map data retained. GPL-3.0-or-later; see LICENSE and CREDITS.md."
+}

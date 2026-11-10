@@ -1,0 +1,727 @@
+{
+  "source": {
+    "release": "https://github.com/fitzforge/polestar/releases/tag/v0.3.5",
+    "archiveSha256": "ef9184e65d1ed6b7b5d4358b8e007d0bbe62fb2d3c7e77e34d9a98853016d36c",
+    "dataFiles": [
+      "Polestar_QuestDB/Quests.lua",
+      "Polestar_QuestDB/Npcs.lua",
+      "Polestar_QuestDB/Objects.lua",
+      "Polestar_QuestDB/Items.lua"
+    ]
+  },
+  "destinations": [
+    {
+      "route": "forever/alliance/03-darkshore",
+      "step": "b0011g02",
+      "quest": 4811,
+      "objectives": 2,
+      "mapped": 2
+    },
+    {
+      "route": "forever/alliance/03-darkshore",
+      "step": "b0019g07",
+      "quest": 29,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/03-darkshore-return",
+      "step": "b0006g04",
+      "quest": 945,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/03-darkshore-return",
+      "step": "b0006g06",
+      "quest": 944,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/03-darkshore-return",
+      "step": "b0007g03",
+      "quest": 731,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/04-redridge-mountains",
+      "step": "b0041g02",
+      "quest": 219,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/05-duskwood",
+      "step": "b0018g05",
+      "quest": 2608,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/06-ashenvale",
+      "step": "b0012g02",
+      "quest": 1090,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/30-40/01-hillsbrad-foothills",
+      "step": "b0049g03",
+      "quest": 1447,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/30-40/02-desolace",
+      "step": "b0009g05",
+      "quest": 1440,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/30-40/04b-stranglethorn-vale",
+      "step": "b0011g05",
+      "quest": 339,
+      "objectives": 4,
+      "mapped": 4
+    },
+    {
+      "route": "forever/alliance/30-40/04b-stranglethorn-vale",
+      "step": "b0011g06",
+      "quest": 340,
+      "objectives": 4,
+      "mapped": 4
+    },
+    {
+      "route": "forever/alliance/30-40/04b-stranglethorn-vale",
+      "step": "b0011g07",
+      "quest": 341,
+      "objectives": 4,
+      "mapped": 4
+    },
+    {
+      "route": "forever/alliance/30-40/04b-stranglethorn-vale",
+      "step": "b0011g08",
+      "quest": 342,
+      "objectives": 3,
+      "mapped": 3
+    },
+    {
+      "route": "forever/alliance/30-40/05-arathi-highlands",
+      "step": "b0009g02",
+      "quest": 1393,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/30-40/05-arathi-highlands",
+      "step": "b0015g03",
+      "quest": 1739,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/30-40/05-arathi-highlands",
+      "step": "b0036g02",
+      "quest": 660,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/30-40/05-arathi-highlands",
+      "step": "b0040g02",
+      "quest": 665,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/40-50/01-stranglethorn-vale",
+      "step": "b0009g03",
+      "quest": 1324,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/40-50/01-stranglethorn-vale",
+      "step": "b0019g03",
+      "quest": 1719,
+      "objectives": 2,
+      "mapped": 2
+    },
+    {
+      "route": "forever/alliance/40-50/03-feralas",
+      "step": "b0019g02",
+      "quest": 2969,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/40-50/03-feralas",
+      "step": "b0022g07",
+      "quest": 4265,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/40-50/04-tanaris",
+      "step": "b0020g02",
+      "quest": 1560,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/40-50/06-searing-gorge",
+      "step": "b0032g02",
+      "quest": 3367,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/50-60/01-burning-steppes",
+      "step": "b0021g02",
+      "quest": 3702,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/50-60/02-felwood",
+      "step": "b0012g02",
+      "quest": 5203,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/50-60/02-felwood",
+      "step": "b0015g04",
+      "quest": 5156,
+      "objectives": 3,
+      "mapped": 3
+    },
+    {
+      "route": "forever/alliance/50-60/04-western-plaguelands",
+      "step": "b0110g02",
+      "quest": 4491,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/50-60/06-silithus",
+      "step": "b0008g02",
+      "quest": 4261,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/50-60/06-silithus",
+      "step": "b0024g03",
+      "quest": 9419,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/50-60/06-silithus",
+      "step": "b0044g03",
+      "quest": 4901,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/50-60/06-silithus",
+      "step": "b0045g02",
+      "quest": 4842,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/dwarf/01-dun-morogh",
+      "step": "b0019g03",
+      "quest": 96608,
+      "objectives": 2,
+      "mapped": 2
+    },
+    {
+      "route": "forever/alliance/dwarf/01-dun-morogh",
+      "step": "b0023g04",
+      "quest": 98319,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/dwarf/01-dun-morogh",
+      "step": "b0032g03",
+      "quest": 287,
+      "objectives": 2,
+      "mapped": 2
+    },
+    {
+      "route": "forever/alliance/dwarf/01-dun-morogh",
+      "step": "b0113g03",
+      "quest": 1689,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/gnome/01-dun-morogh",
+      "step": "b0018g03",
+      "quest": 96608,
+      "objectives": 2,
+      "mapped": 2
+    },
+    {
+      "route": "forever/alliance/gnome/01-dun-morogh",
+      "step": "b0023g04",
+      "quest": 98319,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/gnome/01-dun-morogh",
+      "step": "b0031g03",
+      "quest": 287,
+      "objectives": 2,
+      "mapped": 2
+    },
+    {
+      "route": "forever/alliance/gnome/01-dun-morogh",
+      "step": "b0108g03",
+      "quest": 1689,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/human/01-elwynn-forest",
+      "step": "b0074g03",
+      "quest": 1689,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/nightelf/01-teldrassil",
+      "step": "b0030g03",
+      "quest": 99053,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/nightelf/01-teldrassil",
+      "step": "b0069g03",
+      "quest": 6001,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/alliance/nightelf/02-darkshore",
+      "step": "b0008g02",
+      "quest": 4811,
+      "objectives": 2,
+      "mapped": 2
+    },
+    {
+      "route": "forever/horde/02-the-barrens",
+      "step": "b0060g07",
+      "quest": 28,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/02-the-barrens",
+      "step": "b0075g02",
+      "quest": 898,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/02-the-barrens",
+      "step": "b0088g03",
+      "quest": 95508,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/02-the-barrens",
+      "step": "b0092g02",
+      "quest": 863,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/02-the-barrens",
+      "step": "b0107g02",
+      "quest": 2460,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/02-the-barrens",
+      "step": "b0159g04",
+      "quest": 1090,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/03-silverpine-forest",
+      "step": "b0026g02",
+      "quest": 435,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/05-stonetalon-mountains",
+      "step": "b0009g02",
+      "quest": 6641,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/05-stonetalon-mountains",
+      "step": "b0013g03",
+      "quest": 6482,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/06-hillsbrad-foothills",
+      "step": "b0002g03",
+      "quest": 2480,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/07-ashenvale",
+      "step": "b0011g02",
+      "quest": 6544,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/07-ashenvale",
+      "step": "b0045g02",
+      "quest": 1149,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/07-ashenvale",
+      "step": "b0050g03",
+      "quest": 4904,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/07-ashenvale",
+      "step": "b0051g03",
+      "quest": 4770,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/30-40/02-thousand-needles",
+      "step": "b0028g02",
+      "quest": 5561,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/30-40/04-dustwallow-marsh",
+      "step": "b0011g02",
+      "quest": 1273,
+      "objectives": 2,
+      "mapped": 2
+    },
+    {
+      "route": "forever/horde/30-40/04-dustwallow-marsh",
+      "step": "b0012g02",
+      "quest": 1270,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/30-40/04-dustwallow-marsh",
+      "step": "b0023g03",
+      "quest": 1719,
+      "objectives": 2,
+      "mapped": 2
+    },
+    {
+      "route": "forever/horde/30-40/04-dustwallow-marsh",
+      "step": "b0026g02",
+      "quest": 5581,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/30-40/04-dustwallow-marsh",
+      "step": "b0029g02",
+      "quest": 6132,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/30-40/05-arathi-highlands",
+      "step": "b0033g02",
+      "quest": 665,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/40-50/01-stranglethorn-vale",
+      "step": "b0053g02",
+      "quest": 1393,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/40-50/02-feralas",
+      "step": "b0043g05",
+      "quest": 2767,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/40-50/03-feralas",
+      "step": "b0025g02",
+      "quest": 1173,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/40-50/04-tanaris",
+      "step": "b0018g04",
+      "quest": 648,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/40-50/05-the-hinterlands",
+      "step": "b0004g05",
+      "quest": 2742,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/40-50/05-the-hinterlands",
+      "step": "b0018g04",
+      "quest": 836,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/40-50/05-the-hinterlands",
+      "step": "b0028g05",
+      "quest": 2932,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/40-50/05-the-hinterlands",
+      "step": "b0029g02",
+      "quest": 7843,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/50-60/01-un-goro-crater",
+      "step": "b0052g03",
+      "quest": 5096,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/50-60/02-felwood",
+      "step": "b0035g04",
+      "quest": 5203,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/50-60/02-felwood",
+      "step": "b0041g04",
+      "quest": 5156,
+      "objectives": 3,
+      "mapped": 3
+    },
+    {
+      "route": "forever/horde/50-60/02-felwood",
+      "step": "b0058g02",
+      "quest": 4506,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/50-60/03-winterspring",
+      "step": "b0018g02",
+      "quest": 3909,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/50-60/04-azshara",
+      "step": "b0008g02",
+      "quest": 3568,
+      "objectives": 4,
+      "mapped": 4
+    },
+    {
+      "route": "forever/horde/50-60/06-silithus",
+      "step": "b0041g02",
+      "quest": 4491,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/50-60/06-silithus",
+      "step": "b0070g05",
+      "quest": 5742,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/50-60/07-felwood",
+      "step": "b0029g02",
+      "quest": 4842,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/orc/01-durotar",
+      "step": "b0032g03",
+      "quest": 99123,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/skyborne/01-zephras-isle",
+      "step": "b0058g03",
+      "quest": 97257,
+      "objectives": 2,
+      "mapped": 2
+    },
+    {
+      "route": "forever/horde/tauren/01-mulgore",
+      "step": "b0025g01",
+      "quest": 99411,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/tauren/01-mulgore",
+      "step": "b0031g07",
+      "quest": 98424,
+      "objectives": 3,
+      "mapped": 3
+    },
+    {
+      "route": "forever/horde/tauren/01-mulgore",
+      "step": "b0036g05",
+      "quest": 98430,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/tauren/01-mulgore",
+      "step": "b0058g02",
+      "quest": 6002,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/troll/01-durotar",
+      "step": "b0032g03",
+      "quest": 99123,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/undead/01-tirisfal-glades",
+      "step": "b0005g02",
+      "quest": 90902,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/undead/01-tirisfal-glades",
+      "step": "b0027g02",
+      "quest": 99134,
+      "objectives": 1,
+      "mapped": 1
+    },
+    {
+      "route": "forever/horde/undead/01-tirisfal-glades",
+      "step": "b0036g04",
+      "quest": 99144,
+      "objectives": 1,
+      "mapped": 1
+    }
+  ],
+  "noGeographicTarget": [],
+  "inventoryActions": [
+    {
+      "route": "forever/alliance/06-wetlands",
+      "step": "b0058g03",
+      "quest": 1046,
+      "evidence": "Bundled original .guide quest block and tips; quest 96873 accept specifically says residue is disenchanted from Hexed Pendants."
+    },
+    {
+      "route": "forever/alliance/50-60/03-winterspring",
+      "step": "b0026g05",
+      "quest": 5149,
+      "evidence": "Bundled original .guide quest block and tips; quest 96873 accept specifically says residue is disenchanted from Hexed Pendants."
+    },
+    {
+      "route": "forever/alliance/50-60/06-silithus",
+      "step": "b0081g04",
+      "quest": 5051,
+      "evidence": "Bundled original .guide quest block and tips; quest 96873 accept specifically says residue is disenchanted from Hexed Pendants."
+    },
+    {
+      "route": "forever/horde/50-60/03-winterspring",
+      "step": "b0023g03",
+      "quest": 3786,
+      "evidence": "Bundled original .guide quest block and tips; quest 96873 accept specifically says residue is disenchanted from Hexed Pendants."
+    },
+    {
+      "route": "forever/horde/50-60/03-winterspring",
+      "step": "b0023g06",
+      "quest": 3804,
+      "evidence": "Bundled original .guide quest block and tips; quest 96873 accept specifically says residue is disenchanted from Hexed Pendants."
+    },
+    {
+      "route": "forever/horde/50-60/04-azshara",
+      "step": "b0005g02",
+      "quest": 91899,
+      "evidence": "Bundled original .guide quest block and tips; quest 96873 accept specifically says residue is disenchanted from Hexed Pendants."
+    },
+    {
+      "route": "forever/horde/50-60/04-azshara",
+      "step": "b0005g05",
+      "quest": 91904,
+      "evidence": "Bundled original .guide quest block and tips; quest 96873 accept specifically says residue is disenchanted from Hexed Pendants."
+    },
+    {
+      "route": "forever/horde/50-60/05-eastern-plaguelands",
+      "step": "b0004g07",
+      "quest": 5051,
+      "evidence": "Bundled original .guide quest block and tips; quest 96873 accept specifically says residue is disenchanted from Hexed Pendants."
+    },
+    {
+      "route": "forever/horde/50-60/05-eastern-plaguelands",
+      "step": "b0014g03",
+      "quest": 6022,
+      "evidence": "Bundled original .guide quest block and tips; quest 96873 accept specifically says residue is disenchanted from Hexed Pendants."
+    },
+    {
+      "route": "forever/horde/orc/01-durotar",
+      "step": "b0029g02",
+      "quest": 96873,
+      "evidence": "Bundled original .guide quest block and tips; quest 96873 accept specifically says residue is disenchanted from Hexed Pendants."
+    },
+    {
+      "route": "forever/horde/troll/01-durotar",
+      "step": "b0030g01",
+      "quest": 96873,
+      "evidence": "Bundled original .guide quest block and tips; quest 96873 accept specifically says residue is disenchanted from Hexed Pendants."
+    }
+  ]
+}

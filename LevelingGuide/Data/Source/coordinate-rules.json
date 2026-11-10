@@ -1,0 +1,108 @@
+{
+  "96608": {
+    "selector": {
+      "kind": "accept",
+      "questID": 96608
+    },
+    "text": "Sit by Eric Brighthammer's campfire (/sit) and wait for the Boosted Rest buff.",
+    "areaOnly": true,
+    "evidence": "Bundled Dun Morogh guide: The Great Outdoors; Eric's recorded quest-giver position."
+  },
+  "98319": {
+    "selector": {
+      "kind": "goto",
+      "contains": "Mountaineer Cornelius"
+    },
+    "text": "Find Mountaineer Cornelius inside the Grizzled Den.",
+    "evidence": "Bundled dwarf/gnome guide explicitly points to Mountaineer Cornelius before this goal."
+  },
+  "99053": {
+    "selector": {
+      "kind": "goto",
+      "contains": "outside the barrow"
+    },
+    "text": "Stay with Sentinel Lynessa Duskblossom and escort her out of Ban'ethil.",
+    "evidence": "Bundled nightelf guide has the exit waypoint immediately before this goal."
+  },
+  "6001": {
+    "selector": {
+      "sourceKind": "use",
+      "itemID": 15208
+    },
+    "text": "Use Cenarion Moondust at the Moonkin Stone. Defeat Lunaclaw and talk to the spirit.",
+    "areaOnly": true,
+    "evidence": "Bundled nightelf guide: Moonkin Stone, Cenarion Moondust use point."
+  },
+  "6002": {
+    "selector": {
+      "sourceKind": "use",
+      "itemID": 15710
+    },
+    "text": "Use Cenarion Lunardust at the Moonkin Stone. Defeat Lunaclaw and talk to the spirit.",
+    "areaOnly": true,
+    "evidence": "Bundled tauren guide: Moonkin Stone, Cenarion Lunardust use point."
+  },
+  "99123": {
+    "selector": {
+      "kind": "goto",
+      "contains": "Kolkar Crag"
+    },
+    "text": "Escort Pal'juh out of Kolkar Crag. Stay with the NPC.",
+    "areaOnly": true,
+    "evidence": "Bundled orc/troll guide: Kolkar Crag starting-area waypoint; no exact endpoint recorded."
+  },
+  "99144": {
+    "selector": {
+      "kind": "goto",
+      "contains": "Crusader's Outpost"
+    },
+    "text": "Talk to Bareth Dawnstone and escort him out. Stay with the NPC.",
+    "areaOnly": true,
+    "evidence": "Bundled undead guide: Crusader's Outpost starting-area waypoint; no exact endpoint recorded."
+  },
+  "1046": {
+    "inventoryOnly": true,
+    "text": "Check your bags for Dartol's Rod of Transformation; Krolg gives it when you accept this quest.",
+    "evidence": "Bundled original .guide quest block and tips; quest 96873 accept specifically says residue is disenchanted from Hexed Pendants."
+  },
+  "5149": {
+    "inventoryOnly": true,
+    "text": "Open your bags and combine the three pieces of Pamela's Doll.",
+    "evidence": "Bundled original .guide quest block and tips; quest 96873 accept specifically says residue is disenchanted from Hexed Pendants."
+  },
+  "5051": {
+    "inventoryOnly": true,
+    "text": "Open your bags and combine the two halves of the Good Luck Charm.",
+    "evidence": "Bundled original .guide quest block and tips; quest 96873 accept specifically says residue is disenchanted from Hexed Pendants."
+  },
+  "3786": {
+    "inventoryOnly": true,
+    "text": "Use your Evergreen Pouch with Un'Goro Soil to grow Morrowgrain. It has a ten-minute cooldown; this quest needs ten Morrowgrain.",
+    "evidence": "Bundled original .guide quest block and tips; quest 96873 accept specifically says residue is disenchanted from Hexed Pendants."
+  },
+  "3804": {
+    "inventoryOnly": true,
+    "text": "Use your Evergreen Pouch with Un'Goro Soil to grow Morrowgrain. It has a ten-minute cooldown; this quest needs ten Morrowgrain.",
+    "evidence": "Bundled original .guide quest block and tips; quest 96873 accept specifically says residue is disenchanted from Hexed Pendants."
+  },
+  "91899": {
+    "inventoryOnly": true,
+    "text": "Open the crate Dokimi gave you in your bags, then return its contents.",
+    "evidence": "Bundled original .guide quest block and tips; quest 96873 accept specifically says residue is disenchanted from Hexed Pendants."
+  },
+  "91904": {
+    "inventoryOnly": true,
+    "text": "Open the crate Dokimi gave you in your bags, then return its contents.",
+    "evidence": "Bundled original .guide quest block and tips; quest 96873 accept specifically says residue is disenchanted from Hexed Pendants."
+  },
+  "6022": {
+    "inventoryOnly": true,
+    "text": "Collect seven Living Rot in Corin's Crossing and immediately use the Mortar and Pestle. The rot expires after ten minutes.",
+    "evidence": "Bundled original .guide quest block and tips; quest 96873 accept specifically says residue is disenchanted from Hexed Pendants."
+  },
+  "96873": {
+    "inventoryOnly": true,
+    "text": "Enchanters: obtain Hexed Pendants from the trolls on the southern Echo Isles, then disenchant them for Luminous Residue.",
+    "evidence": "Bundled original .guide quest block and tips; quest 96873 accept specifically says residue is disenchanted from Hexed Pendants."
+  }
+}
