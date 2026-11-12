@@ -1,7 +1,7 @@
 -- SobiLevel Forever: WoW Forever API adapter and automatic startup.
 -- Copyright (c) 2026 SobiLevel Forever contributors. GPL-3.0-only.
 local addonName, ns = ...
-local Controller = { version = "0.3.4-beta", dirty = false, recentTurnIns = {}, requestedQuests = {} }
+local Controller = { version = "0.3.5-beta", dirty = false, recentTurnIns = {}, requestedQuests = {} }
 ns.Controller = Controller
 local Adapter = {}
 local frame = CreateFrame("Frame")
@@ -167,6 +167,59 @@ function Controller:UpdateNavigation()
     end
 end
 
+local campAuras = {
+    ["campsite"] = true, ["campfire"] = true, ["cozy fire"] = true,
+    ["basic campfire"] = true, ["boosted rest"] = true,
+}
+
+local function BuffTime(expiration, now)
+    local seconds = math.ceil(expiration - now)
+    if expiration == 0 then return "On" end
+    if seconds <= 0 then return nil end
+    return string.format("%d:%02d", math.floor(seconds / 60), seconds % 60)
+end
+
+function Controller:UpdateBuffs()
+    if not self.ui.SetBuffStatus then return end
+    local getAura = C_UnitAuras and C_UnitAuras.GetBuffDataByIndex
+    if type(getAura) ~= "function" then
+        self.ui:SetBuffStatus("Buff tracking unavailable")
+        return
+    end
+
+    local now = Number(Read(GetTime), 0)
+    local bag, food, camp
+    for index = 1, 40 do
+        local aura = Read(getAura, "player", index)
+        if not aura then break end
+        local name = Text(Field(aura, "name"), ""):lower()
+        local timer = BuffTime(Number(Field(aura, "expirationTime"), 0), now)
+        if timer then
+            if name == "well-rested" or name == "well rested" then
+                local stacks = math.max(1, math.min(3, Number(Field(aura, "applications"), 1)))
+                bag = "+" .. stacks .. "% " .. timer
+            elseif name == "well fed" then
+                food = timer
+                local tooltip = C_TooltipInfo and Read(C_TooltipInfo.GetUnitBuff, "player", index)
+                local lines = Field(tooltip, "lines")
+                if type(lines) == "table" then
+                    for _, line in ipairs(lines) do
+                        local description = Text(Field(line, "leftText"), ""):lower()
+                        if description:find("experience", 1, true) and description:find("5%", 1, true) then
+                            food = "+5% " .. timer
+                            break
+                        end
+                    end
+                end
+            elseif campAuras[name] then
+                camp = timer
+            end
+        end
+    end
+
+    self.ui:SetBuffStatus("Bag: " .. (bag or "Off") .. "   Food: " .. (food or "Off") .. "   Camp: " .. (camp or "Off"))
+end
+
 function Controller:Refresh()
     if not self.initialized then return end
     self.dirty = false
@@ -178,6 +231,7 @@ function Controller:Refresh()
         ns.Guidance.Describe(step, view, step and step.questID and self.engine:Quest(step.questID))
     end
     self.ui:Render(view)
+    self:UpdateBuffs()
     self:SetArrow(self.progress.paused and { visible = false, unavailable = true, label = "Paused", text = "Paused" }
         or self.navigation:GetDisplay())
     local step = self.engine:GetStep()
@@ -497,8 +551,14 @@ frame:SetScript("OnEvent", function(_, event, arg1, arg2)
 end)
 
 local arrowElapsed, refreshElapsed = 0, 0
+local buffElapsed = 0
 frame:SetScript("OnUpdate", function(_, elapsed)
     if not Controller.initialized then return end
+    buffElapsed = buffElapsed + elapsed
+    if buffElapsed >= 1 and Controller.ui:IsShown() and not Controller:IsRunning() then
+        buffElapsed = 0
+        Controller:UpdateBuffs()
+    end
     arrowElapsed, refreshElapsed = arrowElapsed + elapsed, refreshElapsed + elapsed
     if refreshElapsed >= .25 and (Controller.dirty or (Controller:IsRunning() and refreshElapsed >= 1)) then
         refreshElapsed = 0

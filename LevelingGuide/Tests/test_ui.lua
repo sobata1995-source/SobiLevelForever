@@ -92,7 +92,7 @@ end
 function controller:GetRouteChoices() return self.routes end
 for i = 1, 23 do controller.routes[i] = { id = "r" .. i, title = "Route " .. i, summary = "Levels " .. i } end
 local ui = ns.UI.New(controller)
-check(ui.frame.width == 400 and ui.frame.height == 416, "Window dimensions")
+check(ui.frame.width == 400 and ui.frame.height == 440, "Window dimensions with buff status")
 check(ui.modeBadge.textValue == "GUIDE", "Unknown initial tracking must not say AUTO")
 
 local view = { routeID = "r1", routeTitle = "Starter", stepIndex = 1, totalSteps = 10,

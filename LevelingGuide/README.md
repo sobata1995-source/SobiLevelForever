@@ -18,7 +18,7 @@ The guide contains **65 chapters and 10 faction/race starting paths**: Human, Dw
 
 ## Install
 
-1. Close the game and download **LevelingGuide-0.3.4-beta.zip** from Releases. Use this addon ZIP rather than GitHub's automatic source archive.
+1. Close the game and download **LevelingGuide-0.3.5-beta.zip** from Releases. Use this addon ZIP rather than GitHub's automatic source archive.
 2. Extract **all four folders** into your Forever client's `Interface/AddOns` directory:
 
 ```text
@@ -53,7 +53,7 @@ Close the game and back up your `WTF` folder. Replace the old addon with the fou
 
 ## Public beta: help improve the routes
 
-**Version 0.3.4-beta is ready for community testing.** Early leveling has been tried in game and automated checks cover the route data, progression, filtering, UI and navigation logic. A complete 1–60 playthrough for every race/class has not been verified. XP/time priorities are estimates, not measured speedrun records. Terrain coverage, server quest changes and historical quest/training information can be incomplete. Training learned before installation cannot always be detected until the addon checks the trainer.
+**Version 0.3.5-beta is ready for community testing.** Early leveling has been tried in game and automated checks cover the route data, progression, filtering, UI and navigation logic. A complete 1–60 playthrough for every race/class has not been verified. XP/time priorities are estimates, not measured speedrun records. Terrain coverage, server quest changes and historical quest/training information can be incomplete. Training learned before installation cannot always be detected until the addon checks the trainer.
 
 If a step is wrong, use Skip and [report it on GitHub](https://github.com/sobata1995-source/SobiLevelForever/issues/new/choose) or [Discord](https://discord.gg/Pr5eMAUqt). Include:
 

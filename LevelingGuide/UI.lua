@@ -4,7 +4,7 @@ local addonName, ns = ...
 ns.UI = ns.UI or {}
 
 local UI = ns.UI
-local WINDOW_WIDTH, WINDOW_HEIGHT = 400, 416
+local WINDOW_WIDTH, WINDOW_HEIGHT = 400, 440
 local BODY_HEIGHT, BODY_WIDTH = 190, 280
 local ROUTE_ROWS, ROUTE_ROW_HEIGHT = 8, 46
 local COLORS = {
@@ -313,6 +313,10 @@ function UI.New(controller)
     reset.tooltipTitle, reset.tooltipText = "Reset guide", "Recover from skipped steps. Resets guide choices for this character after confirmation; completed game quests are kept."
     reset:SetScript("OnClick", function() Call(self, "ConfirmReset") end)
     self.resetButton = reset
+    self.buffStatus = Font(frame, "GameFontHighlightSmall", COLORS.gold)
+    self.buffStatus:SetPoint("TOPLEFT", 16, -416)
+    self.buffStatus:SetWidth(WINDOW_WIDTH - 32)
+    self.buffStatus:SetJustifyH("LEFT")
 
     frame:SetScript("OnHide", function()
         if self.routePicker then self.routePicker:Hide() end
@@ -322,6 +326,10 @@ function UI.New(controller)
     self:SetArrow(nil)
     self:Render({ routeTitle = "Choose your route", stepText = "Your guide will appear here.", stepHint = "", stepIndex = 0, totalSteps = 0, progress = 0 })
     return self
+end
+
+function UI:SetBuffStatus(text)
+    self.buffStatus:SetText(text)
 end
 
 function UI:SetBodyScroll(offset)

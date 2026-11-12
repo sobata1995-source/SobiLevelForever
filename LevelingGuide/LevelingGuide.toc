@@ -2,7 +2,7 @@
 ## Title: LevelingGuide
 ## Notes: Leveling guide for WoW Forever, levels 1-60. Community routes with automatic quest progress and map guidance.
 ## Author: SobiLevel Forever contributors; guide data by Polestar contributors
-## Version: 0.3.4-beta
+## Version: 0.3.5-beta
 ## SavedVariables: SobiLevelForeverDB
 ## SavedVariablesPerCharacter: SobiLevelForeverProgress
 ## X-License: GPL-3.0-only
