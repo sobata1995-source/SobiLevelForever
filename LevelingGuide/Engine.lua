@@ -147,9 +147,11 @@ end
 function Engine:TravelAlreadySatisfied(step)
     if not step.blockID then return false end
     local route, chapter, found = self:GetRoute(), self:Chapter(), false
+    local lastTravelBlock = step.travelThroughBlock or step.blockID
     for i = chapter.index + 1, #route.steps do
         local nextStep = route.steps[i]
-        if nextStep.blockID ~= step.blockID then break end
+        if nextStep.blockID ~= step.blockID
+            and (not step.travelThroughBlock or type(nextStep.blockID) ~= "number" or nextStep.blockID > lastTravelBlock) then break end
         if not self:IsFiltered(nextStep) then
             if nextStep.questID and (nextStep.kind == "accept" or nextStep.kind == "complete" or nextStep.kind == "turnin") then
                 -- Only positive quest evidence makes this journey obsolete.
